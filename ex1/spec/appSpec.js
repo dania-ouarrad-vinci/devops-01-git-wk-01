@@ -9,6 +9,14 @@ describe("the first minute line", function () {
     expect(result).toBe("Aucune lampe allumée");
   });
 
+
+  it("simpleMinuteLine should return 1er lampe jaune when given 0:01",function(){
+    let time = "0:01";
+    let result=berlinClock.simpleMinuteLine(time);
+    expect(result).toBe("1er lampe jaune")
+  })
+
+
 });
 
 // allumée ou éteinte
